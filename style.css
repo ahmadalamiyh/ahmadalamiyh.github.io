@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+body {
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px; 
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f4b400;
+}
+
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+.sidebar {
+  width: 35%;
+  background: #2b2b2b;
+  color: white;
+  padding: 30px 20px;
+}
+
+.sidebar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.sidebar h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.sidebar h3 {
+  text-align: center;
+  font-weight: normal;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  margin: 20px 0 10px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+.sidebar p, .sidebar li, .sidebar a {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+
+.content {
+  width: 65%;
+  padding: 30px 40px;
+}
+
+.content h2 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  margin: 20px 0 10px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.job, .school {
+  margin-bottom: 15px;
+}
+
+.job h3, .school h3 {
+  font-size: 15px;
+  color: #555;
+}
+
+.job h4, .school p {
+  font-size: 14px;
+  color: #000;
+}
+
+.job ul {
+  list-style: disc inside;
+  margin-top: 5px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.skills-grid span {
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar, .content {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.card-container {  
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  display: grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+   transition: transform 0.2s ease;  
+   background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.card:hover {
+ transform: scale(1.05);
+}
+
+
+button {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.card-link {
+  text-decoration: none; 
+  color: inherit;      
+}
+.contact h3{
+  text-align: left;
+}
